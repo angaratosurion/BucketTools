@@ -5,15 +5,14 @@
 #define MyAppVersion "0.0.11.00"
 #define MyAppPublisher "Paris Koutsioukis"
 #define MyAppURL "http://www.pariskoutsioukis.net/"
-#define MyAppExeName "MultySymMaker.exe"
-
-#define MyAppCodeRepo="https://github.com/angaratosurion/BucketTools"
+#define MyAppExeName "MultySymMaker.exe" 
+#define MyAppCodeRepo="https://github.com/angaratosurion/BucketTools"    
 #define MyAppVerName   "MultySymMaker 0.0.11.00"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{28D9DEED-9F81-4351-A6D7-86DB35043FE1}
+AppId={{B5B81F67-1DA5-47DA-B7E0-903811DA0F45}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -23,12 +22,13 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-LicenseFile=..\License
+AllowNoIcons=yes
+LicenseFile=G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BucketTools\BucketTools\LICENSE
+OutputDir=G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BucketTools\BucketTools\MultySymMaker\Innosetup\Output
 OutputBaseFilename={#MyAppVerName}-setup
 Compression=lzma
 SolidCompression=yes
 
-OutputDir=.\Output\
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "greek"; MessagesFile: "compiler:Languages\Greek.isl"
@@ -38,21 +38,16 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "..\MultySymMaker\bin\Release\MultySymMaker.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\MultySymMaker\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion createallsubdirs overwritereadonly recursesubdirs
-Source: "..\MultySymMaker\bin\Release\MultySymMaker.exe.config"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\MultySymMaker\bin\Release\MultySymMaker.pdb"; DestDir: "{app}"; Flags: ignoreversion
-
+Source: "G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BucketTools\BucketTools\MultySymMaker\MultySymMaker\bin\Release\MultySymMaker.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BucketTools\BucketTools\MultySymMaker\MultySymMaker\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
-Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName} On GitHub}"; Filename: "{#MyAppCodeRepo}"
-
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: quicklaunchicon
-
+Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName} On GitHub}"; Filename:  "{#MyAppCodeRepo}"
 [Run]
 ;Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
