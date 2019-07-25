@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BucketBox\BucketBox\BucketBox.csproj">
+    <ProjectReference Include="..\..\..\..\BucketBox\BucketBox\BucketBox.csproj">
       <Project>{06237435-a1c6-4286-82c0-f9584921f59d}</Project>
       <Name>BucketBox</Name>
     </ProjectReference>
