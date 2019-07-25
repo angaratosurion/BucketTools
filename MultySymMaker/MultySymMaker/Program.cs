@@ -24,6 +24,12 @@ namespace MultySymMaker
                 if(args.Length<3)
                 {
                     Console.WriteLine("No  arguments (0)", args.Length);
+                    Console.WriteLine("Correct way /d , /j or /h  +linktextfile +linktargetpath \n" +
+                        "linktextfile A text file with  the oaths that contaisn the filess or " +
+                        "folders you want to make to simlinks ." +
+                        " They must be in Unicode \n"+
+                        "linktargetpath: the directory they will be created\n");
+
 
 
                 }
@@ -49,17 +55,18 @@ namespace MultySymMaker
                             {
                                 string linkname = "\"" + args[2] + "\\" + file.Substring(file.LastIndexOf("\\") + 1)+ "\"";
                                 commandtorun = mklinkappname + " " + args[0] + " " + linkname + " \""+file +"\"";
-                                //Process.Start(commandtorun);
+                               
                                 buld.AppendLine(commandtorun);
                             }
                             batchfilecont = buld.ToString();
                             File.WriteAllText(args[1] + ".bat", batchfilecont,Encoding.UTF8);
-                            
+                            Process.Start(args[1] + ".bat");
+
                         }
                     }
                     
                 }
-
+                Console.WriteLine("Press Enter to Exit..");
                 Console.ReadLine();
 
             }
