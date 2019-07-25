@@ -2,13 +2,13 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "MultySymMaker"
-#define MyAppVersion "0.0.10.50"
+#define MyAppVersion "0.0.11.00"
 #define MyAppPublisher "Paris Koutsioukis"
 #define MyAppURL "http://www.pariskoutsioukis.net/"
 #define MyAppExeName "MultySymMaker.exe"
 
 #define MyAppCodeRepo="https://github.com/angaratosurion/BucketTools"
-#define MyAppVerName   "MultySymMaker 0.0.10.50"
+#define MyAppVerName   "MultySymMaker 0.0.11.00"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
