@@ -44,7 +44,7 @@ namespace MultySymMaker
                          if (args[0]=="/d".ToLower()|| args[0] == "/j".ToLower()
                             || args[0] == "/h".ToLower())                            
                         {
-                            buld.AppendLine("@chcp 65001 >null");
+                            buld.AppendLine("@chcp 65001");
                             foreach (var file in files)
                             {
                                 string linkname = "\"" + args[2] + "\\" + file.Substring(file.LastIndexOf("\\") + 1)+ "\"";
@@ -53,7 +53,7 @@ namespace MultySymMaker
                                 buld.AppendLine(commandtorun);
                             }
                             batchfilecont = buld.ToString();
-                            File.WriteAllText(args[1] + ".bat", batchfilecont);
+                            File.WriteAllText(args[1] + ".bat", batchfilecont,Encoding.UTF8);
                             
                         }
                     }
