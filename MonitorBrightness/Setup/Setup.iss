@@ -6,7 +6,7 @@
 #define MyAppPublisher "Paris Koutsioukis"
 #define MyAppURL "http://www.pariskoutsioukis.net/"
 #define MyAppExeName "monitorbrightness.exe" 
-#define MyCodeRepo "https://github.com/angaratosurion/MonitorBrightness"
+#define MyCodeRepo "https://github.com/angaratosurion/BucketTools"
 #define MyCodeRepoTitle "MonitorBrightness On GitHub"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.

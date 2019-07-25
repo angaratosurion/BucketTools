@@ -7,7 +7,7 @@
 #define MyAppURL "http://www.pariskoutsioukis.net/"
 #define MyAppExeName "Autorename.exe"
 
-#define MyAppCodeRepo="https://github.com/angaratosurion/Autorename/"
+#define MyAppCodeRepo="https://github.com/angaratosurion/BucketTools"
 #define MyAppVerName   "Autorename 0.0.2.1"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
