@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NVAPISharp", "..\..\BucketB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultySymMaker", "MultySymMaker\MultySymMaker\MultySymMaker.csproj", "{8657F903-9EC0-41D9-9733-F30C58FA29E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "disabledevice", "disabledevice\disabledevice\disabledevice.csproj", "{430B7E90-E316-47DB-91D3-BF0B8A03A6F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8657F903-9EC0-41D9-9733-F30C58FA29E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8657F903-9EC0-41D9-9733-F30C58FA29E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8657F903-9EC0-41D9-9733-F30C58FA29E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430B7E90-E316-47DB-91D3-BF0B8A03A6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430B7E90-E316-47DB-91D3-BF0B8A03A6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430B7E90-E316-47DB-91D3-BF0B8A03A6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430B7E90-E316-47DB-91D3-BF0B8A03A6F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
